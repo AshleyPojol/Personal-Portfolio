@@ -40,13 +40,12 @@ ul
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 10px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+.main-content
+{
+    padding-left: 270px;
 }
 .padd-15
 {
@@ -58,6 +57,42 @@ ul
     max-width: 1100px;
     width: 100%;
     margin: auto;
+}
+.section .container
+{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: var(--text-black-900);
+    position: relative;
+}
+.section-title h2::before
+{
+    content: "";
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: "";
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 .row
 {
@@ -74,7 +109,15 @@ ul
     padding: 12px 35px;
     color: white;
     border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
     background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.05);
 }
 /* ASIDE */
 
@@ -112,7 +155,7 @@ ul
 .aside .logo a span
 {
     font-family: 'Bungee', cursive;
-    font-family: 40px;
+    font-size: 40px;
 }
 .aside .logo a::before
 {
@@ -249,8 +292,90 @@ h3.my-section
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
+} 
+.home-img::after
+{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 20px;
+    bottom: -40px;
+}
+.home-img::before
+{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 20px;
+    top: -40px;
 }
 .home .home-img img
 {
+    margin: auto;
+    border-radius: 5px;
     height: 400px;
+}
+
+/** ABOUT **/
+
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-text h3{
+    font-size: 24;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+.section .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about .about-content .about-text p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    color: var(--text-black-900);
+    background-color: var(--skin-color);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p
+{
+    padding: 10px 0;
+    font-size: 16px;
+}
+.about .about-content .personal-info .info-item p span
+{
+    color: var(--text-black-700);
+    margin-left: 6px;
+    display: inline-block;
+}
+.about .about-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
 }
