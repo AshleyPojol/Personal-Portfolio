@@ -119,6 +119,11 @@ ul
 {
     transform: scale(1.05);
 }
+.shadow-dark
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
 /* ASIDE */
 
 .aside
@@ -345,7 +350,7 @@ h3.my-section
 .about .about-content .about-text p
 {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 30px;
     color: var(--text-black-700);
 }
 .about .about-content .personal-info
@@ -388,7 +393,7 @@ h3.my-section
 {
     flex: 0 0 40%;
     max-width: 40%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .about .about-content .skills .skill-item
 {
@@ -433,8 +438,367 @@ h3.my-section
 }
 .about .about-content .skills h1
 {
-    position: relative;
+    flex: 0 0 40%;
+    max-width: 40%;
     font-size: 16px;
     color: var(--text-black-900);
     margin-bottom: 5%;
+}
+.about .about-content .education, 
+.about .about-content .achievements
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h2.title
+{
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline-box
+{
+    flex:  0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline
+{
+    background-color: var(--bg-black-100);
+    padding:  30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item
+{
+    position: relative;
+    padding: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child
+{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before
+{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-date
+{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700)
+}
+.about .about-content .timeline .timeline-date .fa
+{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-title
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+/*OTHERS*/
+.service .container
+{
+    padding-bottom: 40px;
+}
+
+.service .service-item
+{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service-item .service-item-inner
+{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transform: all 0.3S ease;
+}
+.service .service-item .service-item-inner:hover
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service .service-item .service-item-inner .icon
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner .icon .fa
+{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3S ease;
+}
+.service .service-item .service-item-inner:hover .icon
+{
+    background-color: var(--skin-color);
+}
+.service .service-item .service-item-inner:hover .icon .fa
+{
+    font-size: 25px;
+    color: var(--text-black-900)
+}
+.service .service-item .service-item-inner h4
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+/*CONTACT*/
+.contact-title
+{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon
+{
+    display: inline-block;
+}
+.contact .contact-info-item .fa
+{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 15px;
+}
+.contact .contact-info-item p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .contact-form .form-item
+{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact .contact-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.contact .contact-form .form-item textarea.form-control
+{
+    height: 140px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .contact-form .btn
+{
+    height: 50px;
+    padding: 0 50px; 
+}
+@media(max-width: 1199px)
+{
+    .aside
+    {
+        left: -270px;
+    }
+    .main-content
+    {
+        padding: 0;
+    }
+    .about .about-content .personal-info .info-item p span
+    {
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px)
+{
+    
+    .service .service-item,
+    .contact .contact-info-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .home .home-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+}
+@media(max-width:767px)
+{
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .service .service-item,
+    .about .about-content .achievements,
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .personal-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.style-switcher
+{
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transform: all 0.3s ease;
+}
+.style-switcher .s-icon
+{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-700);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+.style-switcher .s-icon i
+{
+    line-height: 40px;
+}
+.style-switcher .style-switcher-toggler
+{
+    top: 0;
+}
+.style-switcher .day-night
+{
+    top: 55px;
+}
+.style-switcher h4
+{
+    margin: 0 0 10px;
+    color: var(--text-black-700);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.style-switcher .colors
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.style-switcher .colors span
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--skin-color);
+    border-radius: 50%;
+}
+.style-switcher .colors-1
+{
+    background-color: #e24718;
 }
