@@ -37,6 +37,8 @@ function setActiveStyle(color)
 
 /* DARK MODE BOI */
 //This option will change the light theme in to a dark theme.//
+
+//Lesson 2 - Const //
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("fa-sun");
