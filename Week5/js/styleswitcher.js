@@ -1,10 +1,11 @@
 /* ============ TOGGLE STYLE HERE ASH ============== */
+// This is for the theme switcher in the website.//
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggle.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open");
 })
 
-// HIDE W/ SCROLLING //
+// HIDE W/ SCROLLING - this option will hide the themes setting while scrolling.// 
 window.addEventListener("scroll", () => {
     if (document.querySelector(".style-switcher").classList.contains("open"))
     {
@@ -13,6 +14,7 @@ window.addEventListener("scroll", () => {
 })
 
 /* FINALLY TOGGLE THEME */
+//This will switch the colors of the themes in the website.//
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color)
 {
@@ -29,6 +31,7 @@ function setActiveStyle(color)
 }
 
 /* DARK MODE BOI */
+//This option will change the light theme in to a dark theme.//
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("fa-sun");
