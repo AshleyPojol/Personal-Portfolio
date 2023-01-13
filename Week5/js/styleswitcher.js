@@ -17,6 +17,8 @@ window.addEventListener("scroll", () => {
 //This will switch the colors of the themes in the website.//
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color)
+
+//If else option - Lesson 9//
 {
     alternateStyles.forEach((style) => {
         if(color === style.getAttribute("title"))
