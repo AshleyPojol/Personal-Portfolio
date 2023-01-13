@@ -1,6 +1,9 @@
 /* ============ TOGGLE STYLE HERE ASH ============== */
 // This is for the theme switcher in the website.//
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+
+// Event Listener - Lesson 22 //
+
 styleSwitcherToggle.addEventListener("click", () => {
     document.querySelector(".style-switcher").classList.toggle("open");
 })
