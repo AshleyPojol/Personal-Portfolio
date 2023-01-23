@@ -52,6 +52,8 @@ dayNight.addEventListener("click", () => {
     
     document.body.classList.toggle("dark");
 })
+
+// Lesson 23 - Window //
 window.addEventListener("load", () => {
     if(document.body.classList.contains("dark"))
     {
