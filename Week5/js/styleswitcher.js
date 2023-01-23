@@ -19,9 +19,12 @@ window.addEventListener("scroll", () => {
 /* FINALLY TOGGLE THEME */
 //This will switch the colors of the themes in the website.//
 const alternateStyles = document.querySelectorAll(".alternate-style");
+
+
+// Function - Lesson 18 //
 function setActiveStyle(color)
 
-//If else option - Lesson 9//
+//If Else Option - Lesson 9 //
 {
     alternateStyles.forEach((style) => {
         if(color === style.getAttribute("title"))
@@ -35,7 +38,7 @@ function setActiveStyle(color)
     })
 }
 
-/* DARK MODE BOI */
+/* DARK MODE */
 //This option will change the light theme in to a dark theme.//
 
 //Lesson 2 - Const //
