@@ -18,6 +18,7 @@ window.addEventListener("scroll", () => {
 
 /* FINALLY TOGGLE THEME */
 //This will switch the colors of the themes in the website.//
+
 const alternateStyles = document.querySelectorAll(".alternate-style");
 
 
