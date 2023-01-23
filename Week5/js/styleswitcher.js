@@ -54,6 +54,7 @@ dayNight.addEventListener("click", () => {
 window.addEventListener("load", () => {
     if(document.body.classList.contains("dark"))
     {
+        // Lesson 27  - jQuery Selectors // 
         dayNight.querySelector("i").classList.add("fa-sun");
     }
     else
