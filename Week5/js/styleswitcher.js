@@ -24,7 +24,6 @@ const alternateStyles = document.querySelectorAll(".alternate-style");
 
 // Function - Lesson 18 //
 function setActiveStyle(color)
-// Function Paramete = Color - Lesson 18.3 //
 
 //If Else Option - Lesson 9 //
 {
