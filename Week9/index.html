@@ -377,39 +377,56 @@
                 </div>
                 <h3 class="contact-title padd-15">Feel Free to Email Me</h3>
                 <h4 class="contact-sub-title padd-15">Fill-Up the Form</h4>
+                 
                 <!-- == Contact Form == -->
                 <div class="row">
                     <div class="contact-form padd-15">
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <form action="insert.php" method="post">
+                                    <input type="text" class="form-control" placeholder="Name" id="fullName" name="fullName">
                                 </div>
                             </div>
+
+
+
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email" id="emailUsed" name="emailUsed">
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Subject">
+                                    <input type="text" class="form-control" placeholder="Subject" id="subjectUsed" name="subjectUsed">
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    <textarea name="messageInput" class="form-control" id="messageInput" placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <button type="submit" class="btn">Send Message</button>
                             </div>
+                        </form>
+
+
                         </div>
                     </div>
                 </div>
