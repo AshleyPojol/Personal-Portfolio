@@ -42,7 +42,7 @@ if ($conn->connect_error) {
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["id"]. "</td><td>".  $row["fullName"].  "</td><td>".  $row["emailUsed"] . "</td><td>".  $row["subjectUsed"] . "</td><td>". "<br> Message: " . $row["messageInput"] . "<br>";
+            echo "<tr><td>" . $row["id"]. "</td><td>".  $row["fullName"].  "</td><td>".  $row["emailUsed"] . "</td><td>".  $row["subjectUsed"] . "</td><td>". $row["messageInput"] . "<br>";
         }
     echo "</table>";
     } else {
