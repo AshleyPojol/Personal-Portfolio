@@ -2,18 +2,32 @@
 <html>
 <body>
 <head> 
+<link rel="stylesheet" href="php.css">
+<script src="https://use.fontawesome.com/98dccfb4ee.js"></script>
     <title> Visitor's Log </title>
-</head>
-<body>
+    <h1> Visitor's Log </h1>
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>Toru</span></a>
+        </div>
+    <div class="nav-toggler">
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li><a href="home"><i class="fa fa-address-card"></i></a><span>Profile</span></li>
+        </ul>
+    </div>
+
     <table>
         <tr>
             <th> ID </th>
-            <th> Full Name </th>
+            <th> Name </th>
+            <th> Email </th>
             <th> Subject </th>
             <th> Message </th>
-</tr>
+        </tr>
 
-<?php
+<?php 
 $host = "localhost";
 $dbusername = "root";
 $dbpassword = "";
@@ -28,12 +42,14 @@ if ($conn->connect_error) {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "<tr><td>" . $row["id"] . "</tr></td>" . $row["fullName"] . "</tr></td>" . $row;["emailUsed"] . "</tr></td>". $row["subjectUsed"] . "</tr></td>" . $row["messageInput"] . "</tr></td>"  ;
-
-
+        while($row = $result->fetch_assoc()) {
+            echo "<tr><td>" ."<br> ID: ". $row["id"]. "</td><td>". "<br>Full Name: ". $row["fullName"].  "</td><td>". "<br> Email: " . $row["emailUsed"] . "</td><td>". "<br> Subject: " . $row["subjectUsed"] . "</td><td>". "<br> Message: " . $row["messageInput"] . "<br>";
         }
+    echo "</table>";
+    } else {
+        echo "0 results";
     }
+    
     ?>
     </table>
 </body>
