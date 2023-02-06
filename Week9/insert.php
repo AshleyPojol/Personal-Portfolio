@@ -9,6 +9,7 @@ if (!empty($fullName)){
         if(!empty($subjectUsed)){
             if(!empty($messageInput)){
 
+  
                 $host = "localhost";
                 $dbusername = "root";
                 $dbpassword = "";
@@ -31,7 +32,7 @@ if (mysqli_connect_error()){
     $conn->close();
     }
 
-            
+
             } else {
                 echo "Message should not be empty, Try Again.";
                 die ();
@@ -50,6 +51,14 @@ if (mysqli_connect_error()){
     }
 
 
-   
+echo "<h3> Visitor's Log</h3>";
+echo $fullName;
+echo "<br>";
+echo $emailUsed;
+echo "<br>";
+echo $subjectUsed;
+echo "<br>";
+echo $messageInput;
+echo "<br>";
 
 ?>
