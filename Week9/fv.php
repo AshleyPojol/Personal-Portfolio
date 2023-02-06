@@ -29,16 +29,15 @@
 
 <?php 
 $host = "localhost";
-$dbusername = "root";
-$dbpassword = "";
-$dbname = "test_db";
-
+$dbusername = "webprogmi211";
+$dbpassword = "webprogmi211";
+$dbname = "webprogmi211";
 $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-    $sql = "SELECT id, fullName, emailUsed, subjectUsed, messageInput from inquiry";
+    $sql = "SELECT id, fullName, emailUsed, subjectUsed, messageInput from acpojol_MyGuests";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
