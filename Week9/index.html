@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!--Links Here Be Organized-->
+<script src="https://use.fontawesome.com/98dccfb4ee.js"></script>
+<script src="https://unkgp.com/swiper/swiper-bundle.min.js"></script>
 <script src="/Week9/js/styleswitcher.js"></script>
-<script src="/Week9/js/slider.js"></script>
-<script src="js/reveal.js"></script>
-
-
+<script src="/Week9/js/carousel.js"></script>
 <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <link rel="stylesheet" href="css/skins/color1.css">
-
+<!--== Style Switcher == -->
 <link rel="stylesheet" href="css/skins/color1.css" class="alternate-style" title="color1" disabled >
 <link rel="stylesheet" href="css/skins/color2.css" class="alternate-style" title="color2" disabled >
 <link rel="stylesheet" href="css/skins/color3.css" class="alternate-style" title="color3" disabled>
@@ -22,15 +18,11 @@
 <link rel="stylesheet" href="css/styleswitcher.css">
 
 
-
 <!-- === Favicon Here === -->
 
 <link rel="icon" href="img/favicon.png">
 
 <title>Ashley</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<meta charset="utf-8" />
 
 </head>
     <body>
@@ -62,7 +54,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello reveal"> Hello, my name is <span class="name-1">Ashley Joy</span></h3>
+                            <h3 class="hello"> Hello, my name is <span class="name">Ashley Joy</span></h3>
                             <h3 class="my-section">I am from <span class="typing">BSIT-MI211</span></h3>
                             <p> currently taking Bachelor of Science in Information Technology in Makati, Philippines.</p>
                             <a href="#contact" class="btn contact-me"> Looking For Me </a>
@@ -76,7 +68,7 @@
             <!-- ==== Home Section End === -->
             <!-- ==== About Section Start === -->
             <section class="about section" id="information">
-                <div class="container reveal">
+                <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2> About Me </h2>
@@ -265,7 +257,7 @@
 
             <!-- ==== Others Section Start === -->
             <section class="service section p" id="others">
-                <div class="container reveal">
+                <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Others</h2>
@@ -344,29 +336,72 @@
             <!-- ==== Services Section End === -->
 
                                 <!-- == Carousel Start == -->
-                                <section class="carousel section">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="carousel-title padd-15">
-                                                <h2 class="title"> Mutuals </h2>
-                                        </div>
-                                    </div>
-                                </section>
-                                
-                                <!-- == Carousel End == -->
+                                <section class="mutual section">
+                                <div class="container">
+                                 <div class="row">
+                                     <div class="mutual-title padd-15">
+                                         <h2>Mutual</h2>
+                                                <div class="swiper-mySwiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <!-- == First Card == -->
+                                                            <div class="card shadow-dark">
+                                                            <div class="image-content shadow-dark">
+                                                                 <span class="overlay"></span>
+                                                                  <div class="card-image">
+                                                                      <img src="Sample_Edit.png" alt="" class="card-img">
+                                                                  </div>
+                                                                 </div>
 
-                                 <!-- == Card Start == -->
-                                 <section class="card section">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="card-title padd-15">
-                                                <h2 class="memories"> Memories </h2>
+                                                                 <div class="card-content">
+
+                                                                     <h2 class="cardname">Ashley Joy Pojol</h2>
+                                                                     <p class="description">I love smiles. I love smiling at people and receiving smiles. I've seen many times that when a person is sad,
+                                                                          a smile could turn his whole day around and make him happy or at least make him forget his pain.</p>
+                                                                          <div class="media-icons">
+                                                                              <a href="https://www.facebook.com/ashiepoj"><i class="fab fa-facebook"></i></a>
+                                                                              <a href="https://github.com/AshleyPojol"><i class="fab fa-github"></i></a>
+                                                                              <a href="https://www.instagram.com/ashiepojol/"><i class="fab fa-instagram"></i></a>
+                                                                            </div>
+                                                                            <div class="rating">
+                                                                                <i class="fas fa-star"></i>
+                                                                                <i class="fas fa-star"></i>
+                                                                                <i class="fas fa-star"></i>
+                                                                                <i class="fas fa-star"></i>
+                                                                                <i class="fas fa-star"></i>
+                                                                            </div>
+                                                                            <a href="http://apcwebprog.csf.ph/~acpojol/Lab-2/Week9/"><button class="visit">Visit</button></a>
+                                                                         </div>
+                                                                        </div>
+
+                                                            <!-- == Second Card == -->
+                                                            <!-- == Third Card == -->
+                                                            <!-- == Fourth Card == -->
+                                                            <!-- == Fifth Card == -->
+
+
+                                                </div>
+                                            </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
+                                </section>
+                                <!-- == Carousel End == -->
 
-                                 </section>
-                                 <!-- == Card End == -->
+                                <!-- == Memories Start == -->
+                                <section class="memories section">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="memories-title padd-15">
+                                                <h2>Memories</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- == Memories Start == -->
+
+
 
             <!-- ==== Contact Section Start === -->
             <section class="contact section" id="contactus">
