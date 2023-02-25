@@ -28,7 +28,7 @@
         </tr>
 
 <?php 
-$host = "localhost";
+$host = "192.168.150.213";
 $dbusername = "webprogmi211";
 $dbpassword = "j@zzyAngle30";
 $dbname = "webprogmi211";
