@@ -30,7 +30,7 @@
 <?php 
 $host = "localhost";
 $dbusername = "webprogmi211";
-$dbpassword = "webprogmi211";
+$dbpassword = "j@zzyAngle30";
 $dbname = "webprogmi211";
 $conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
 if ($conn->connect_error) {

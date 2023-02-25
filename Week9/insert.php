@@ -12,7 +12,7 @@ if (!empty($fullName)){
   
                 $host = "localhost";
                 $dbusername = "webprogmi211";
-                $dbpassword = "webprogmi211";
+                $dbpassword = "j@zzyAngle30";
                 $dbname = "webprogmi211";
 
 // CONNECTION HERE
